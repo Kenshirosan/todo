@@ -1,6 +1,6 @@
 <?php
 
-require('../helpers/helpers.php');
+include(__DIR__ . '/../lib/bootstrap.php');
 
 $data = readCSV('todolist');
 

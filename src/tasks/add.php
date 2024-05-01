@@ -1,6 +1,6 @@
 <?php
 
-include('../helpers/helpers.php');
+include(__DIR__ . '/../lib/bootstrap.php');
 
 $post = cleanPost($_POST);
 
