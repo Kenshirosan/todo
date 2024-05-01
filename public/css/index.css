@@ -72,7 +72,7 @@ form div {
 }
 
 form div {
-  width: 50%;
+  width: 80%;
 }
 
 .form-container {
@@ -109,6 +109,11 @@ form div {
   top: calc(50% - 300px);
   left: calc(50% - 395px);
   z-index: 1000;
+}
+.form-container form button[type="submit"] {
+  background-color: greenyellow;
+  border-radius: 5px;
+  border: 10px solid grey;
 }
 
 .form-container.is-active,
