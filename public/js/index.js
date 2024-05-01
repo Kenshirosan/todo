@@ -13,7 +13,7 @@ function toggleForm() {
     form.classList.contains("is-active") ? "Annuler" : "Ajouter une tache";
   document.querySelector(".form-container").classList.toggle("is-active");
   const inputs = document.querySelectorAll("input");
-  inputs.forEach.call(inputs, (input) => {
+  inputs.forEach((input) => {
     input.classList.toggle("is-active");
   });
 }
