@@ -53,7 +53,8 @@ function sort_arr($a, $b): int
     return ($a[2] < $b[2]) ? -1 : 1;
 }
 
-function sortTasks() {
+function sortTasks(): void
+{
     $tasks = readCSV('todolist');
 
     uasort($tasks, 'sort_arr');
