@@ -9,11 +9,13 @@ function init() {
 function toggleForm() {
   const form = document.querySelector(".js-selector");
   form.classList.toggle("is-active");
+
   document.querySelector(".button-container button").textContent =
     form.classList.contains("is-active") ? "Annuler" : "Ajouter une tache";
+
   document.querySelector(".form-container").classList.toggle("is-active");
-  const inputs = document.querySelectorAll("input");
-  inputs.forEach((input) => {
+
+  document.querySelectorAll("input").forEach((input) => {
     input.classList.toggle("is-active");
   });
 }
@@ -21,11 +23,9 @@ function toggleForm() {
 function completeTask() {
   const buttons = document.querySelectorAll("button[data-index]");
 
-  buttons.forEach.call(buttons, (button) => {
+  buttons.forEach((button) => {
     button.addEventListener("click", function () {
-      // this.dataset.index
-      // const index = this.getAttribute('data-index');
-
+      // TODO : persist this info
       this.parentElement.parentElement.classList.toggle("task-done");
     });
   });
@@ -34,8 +34,8 @@ function completeTask() {
 function identifyDate() {
   const strings = document.querySelectorAll("td p");
 
-  strings.forEach.call(strings, (string) => {
-    if (validateDate(string.innerHTML)) {
+  strings.forEach((string) => {
+    if (validateDate(string.textContent)) {
       checkDueDate(string);
     }
   });
