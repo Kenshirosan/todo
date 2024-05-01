@@ -1,5 +1,5 @@
 <?php
-    require('read.php');
+    require('./src/tasks/read.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,12 +13,12 @@
         <h2>Task Manager</h2>
         <div class="button-container">
             <button>Ajouter une tache</button>
-            <form action="delete.php" method="POST">
+            <form action="src/tasks/delete.php" method="POST">
                 <button>Effacer toutes les taches</button>
             </form>
         </div>
         <div class="form-container">
-            <form class="js-selector" action="add.php" method="POST">
+            <form class="js-selector" action="src/tasks/add.php" method="POST">
                 <input type="text" name="title" placeholder="title">
                 <textarea name="description" id="" cols="50" rows="10"  placeholder="description"></textarea>
                 <input type="date" name="deadline"  placeholder="deadline">
@@ -62,7 +62,7 @@
                                 </button>
                             </td>
                             <td>
-                                <form action="deleteOneTask.php" method="POST">
+                                <form action="src/tasks/deleteOneTask.php" method="POST">
                                     <input type="hidden" name="taskId" value="<?= $index ?>"/>
                                     <button type="submit">
                                         <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-dash-circle-fill" fill="red" xmlns="http://www.w3.org/2000/svg">

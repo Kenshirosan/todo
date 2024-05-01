@@ -1,6 +1,8 @@
 <?php
 
-$handle = fopen('todolist.csv', 'r');
+
+
+$handle = fopen(__DIR__ . '/../../todolist.csv', 'r');
 
 $data = [];
 
