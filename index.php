@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./public/css/index.css">
     <title>Todolist</title>
 </head>
 <body>
@@ -78,6 +78,6 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="public/js/index.js"></script>
 </body>
 </html>
