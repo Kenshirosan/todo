@@ -7,3 +7,6 @@ $data = [];
 while ($line = fgetcsv($handle)) {
     $data[] = $line;
 }
+
+
+sort($data);

@@ -47,8 +47,8 @@
                 <tbody>
                     <?php foreach($data as $index => $todo) : ?>
                         <tr data-index="<?= $index ?>">
-                            <?php foreach($todo as $index => $line) : ?>
-                                <!----><td data-index="<?= $index ?>"><p><?= $line  ?></p></td><!---->
+                            <?php foreach($todo as $i => $line) : ?>
+                                <!----><td data-index="<?= $i ?>"><p><?= $line  ?></p></td><!---->
                             <?php endforeach ?>
 
                             <td>
