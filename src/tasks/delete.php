@@ -1,11 +1,9 @@
 <?php
 
-$handle = fopen(__DIR__ . '/../../todolist.csv', 'w');
+require(__DIR__ . '/../helpers/helpers.php');
 
-$data = [];
-
-foreach($data as $taskData) {
-    fputcsv($data, $taskData);
-}
+writeCSV([], 'todolist', 'w');
 
 header('Location: ../../');
+
+die();

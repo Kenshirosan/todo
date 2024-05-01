@@ -1,14 +1,11 @@
 <?php
 
+require(__DIR__ . '/../helpers/helpers.php');
 
+$data = readCSV('todolist');
 
-$handle = fopen(__DIR__ . '/../../todolist.csv', 'r');
+uasort($data, 'sort_arr');
 
-$data = [];
+writeCSV($data, 'todolist', 'w');
 
-while ($line = fgetcsv($handle)) {
-    $data[] = $line;
-}
-
-
-sort($data);
+$data = readCSV('todolist');

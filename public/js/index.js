@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", init);
 function init() {
   document.querySelector("button").addEventListener("click", toggleForm);
 
@@ -59,3 +58,5 @@ function validateDate(date) {
   const regex = /^\d{4}-\d{1,2}-\d{1,2}$/;
   return regex.test(String(date).toLowerCase());
 }
+
+document.addEventListener("DOMContentLoaded", init);
