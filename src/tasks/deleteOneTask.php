@@ -10,6 +10,8 @@ array_splice($data, $post['taskId'], 1);
 
 writeCSV($data, 'todolist', 'w');
 
+sortTasks();
+
 header('Location: ../../');
 
 die();

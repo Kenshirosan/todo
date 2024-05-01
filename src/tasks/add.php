@@ -6,6 +6,8 @@ $post = cleanPost($_POST);
 
 writeCSV([$post], 'todolist');
 
+sortTasks();
+
 header('Location: ../../');
 
 die();
