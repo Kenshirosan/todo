@@ -43,7 +43,7 @@ button {
 }
 
 input[name="title"],
-input[name="description"],
+textarea[name="description"],
 input[name="deadline"],
 input[name="priority"],
 select,
@@ -131,7 +131,8 @@ input {
   opacity: 0;
 }
 
-input.is-active {
+input.is-active,
+textarea.is-active {
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }
