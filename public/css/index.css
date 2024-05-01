@@ -54,7 +54,6 @@ button {
 }
 
 textarea {
-  width: 82%;
   font-weight: bold;
   padding: 1em;
   margin: 1em;
@@ -67,19 +66,25 @@ textarea:focus {
   border: 3px solid #555;
 }
 
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  width: 50%;
+}
+
 .form-container {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   z-index: -1;
   width: 50vw;
-  height: 60vh;
+  height: 70vh;
   position: absolute;
   top: calc(50% - 300px);
-  left: calc(50% - 480.5px);
-}
-
-.form-container .is-active {
+  left: calc(50% - 481px);
 }
 
 .form-container h3 {
@@ -101,7 +106,7 @@ textarea:focus {
 
 .form-container form {
   position: relative;
-  top: calc(50% - 240px);
+  top: calc(50% - 300px);
   left: calc(50% - 395px);
   z-index: 1000;
 }

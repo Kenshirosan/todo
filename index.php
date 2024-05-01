@@ -19,15 +19,30 @@
         </div>
         <div class="form-container">
             <form class="js-selector" action="src/tasks/add.php" method="POST">
-                <input type="text" name="title" placeholder="title">
-                <textarea name="description" id="" cols="50" rows="10"  placeholder="description"></textarea>
-                <input type="date" name="deadline"  placeholder="deadline">
-                <select name="priority" id="">
-                    <option value="high">high</option>
-                    <option value="normal">normal</option>
-                    <option value="low">low</option>
-                </select>
-
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" name="title" placeholder="title" id="title">
+                </div>
+<!--                -->
+                <div>
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" cols="50" rows="10" placeholder="description"></textarea>
+                </div>
+<!--                -->
+                <div>
+                    <label for="deadline">Deadline</label>
+                    <input type="date" name="deadline"  placeholder="deadline" id="deadline">
+                </div>
+<!--                -->
+                <div>
+                    <label for="priority">Priority</label>
+                        <select name="priority" id="priority">
+                            <option value="high">high</option>
+                            <option value="normal">normal</option>
+                            <option value="low">low</option>
+                        </select>
+                </div>
+<!---->
                 <button type="submit">Submit</button>
             </form>
         </div>
